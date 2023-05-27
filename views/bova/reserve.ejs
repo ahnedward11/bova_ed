@@ -31,25 +31,38 @@
             <div class="row">
                 <h1 class="text-center">Reservations</h1>
                 <div class="col-6 offset-3">
-                    <form action="/campgrounds" method="POST">
+                    <form action="/reservations" method="POST" novalidate class = "validated-form">
                         <div class="mb-3">
-                            <label class="form-label" for="title">Name</label>
-                            <input class="form-control" type="text" id="title" name="campground[title]">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-control" type="text" id="name" name="reservation[name]" required>
+                            <!-- <div class="valid-feedback">
+                                Looks Good!
+                            </div> -->
                         </div>
             
                         <div class="mb-3">
-                            <label class="form-label" for="location">Party Size</label>
-                            <input class="form-control" type="number" id="location" name="campground[location]" min=0 max= 10>
+                            <label class="form-label" for="size">Party Size</label>
+                            <select id="size" name="reservation[size]" required>
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5</option>
+                                <option value=6>6</option>
+                                <option value=7>7</option>
+                                <option value=8>8</option>
+                                <option value=9>9</option>
+                                <option value=10>10</option>
+                              </select>
+                            <!-- <input class="form-control" type="number" id="location" name="size" placeholder= 2 min=0 max= 10 required> -->
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="image">Date</label>
-                            <input type="date" value="2023-05-26" />
+                            <label class="form-label" for="date">Date</label>
+                            <input type="date" id= "date" value="2023-05-27" name="reservation[date]" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="price">Time</label>
-                            <div class="input-group">
-                                <!-- <span class="input-group-text" id="price-label">$</span> -->
-                                <select id="cars" name="cars">
+                            <label class="form-label" for="time">Time</label>
+                                <select id="time" name="reservation[time]" required>
                                     <option value="5">5:00 PM</option>
                                     <option value="5.5">5:30 PM</option>
                                     <option value="6">6:00 PM</option>
@@ -62,7 +75,7 @@
                                     <option value="9.5">9:30 PM</option>
                                     <option value="10">10:00 PM</option>
                                   </select>
-                            </div>
+                
                         </div>
                         <div class="mb-3">
                             <button class="btn btn-success">Make Reservation</button>
@@ -79,7 +92,27 @@
 
 
     </div>
+    <script>
+            (function () {
+    'use strict'
 
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.validated-form')
+
+    // Loop over them and prevent submission
+    Array.from(forms)
+        .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+        })
+    })()
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

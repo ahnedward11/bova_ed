@@ -2,14 +2,25 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
+const Reservation = require('./models/reservation')
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
 
 const ejsMate = require('ejs-mate');
-// var path = require('path');
-mongoose.connect('mongodb://localhost:27017/yelp-camp', {
+const { captureRejectionSymbol } = require('events');
+const dbUrl = process.env.DB_URL;
+
+mongoose.connect('mongodb://localhost:27017/edproject', {
     useNewUrlParser: true,
     // useCreateIndex: true,
     useUnifiedTopology: true
 });
+
+
+
+// 'mongodb://localhost:27017/edproject'
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
@@ -29,6 +40,7 @@ app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')))
 
 
+
 app.get('/', (req, res) => {
     res.render('home')
 });
@@ -43,6 +55,23 @@ app.get('/bova/cart', (req, res) => {
 
 app.get('/bova/reserve', (req, res) => {
     res.render('bova/reserve');
+})
+
+app.get('/bova/:id', async (req, res,) => {
+    const reservation = await Reservation.findById(req.params.id)
+    res.render('bova/show', { reservation });
+});
+
+
+
+
+
+app.post('/reservations', async(req, res) =>{
+  
+    const reservation = new Reservation(req.body.reservation);
+    await reservation.save();
+    res.redirect('bova/reserve')
+
 })
 
 

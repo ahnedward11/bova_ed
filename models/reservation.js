@@ -5,7 +5,7 @@ const ReservationSchema = new Schema({
     name: String,
     size: Number,
     date: String,
-    time: String
+    time: Number,
 });
 
 module.exports = mongoose.model('Reservation', ReservationSchema);
