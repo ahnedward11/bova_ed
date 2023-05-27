@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bova</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/reserve.css">
+
+
+</head>
+
+<body class="d-flex text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-left mb-0">Bova</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-right">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/bova/menu">Menu</a>
+                    <a class="nav-link active" href="#">Reserve</a>
+                    <a class="nav-link" href="/bova/cart">Cart</a>
+
+
+                </nav>
+            </div>
+        </header>
+        <main class="px-3">
+            <div class="row">
+                <h1 class="text-center">Reservations</h1>
+                <div class="col-6 offset-3">
+                    <form action="/campgrounds" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label" for="title">Name</label>
+                            <input class="form-control" type="text" id="title" name="campground[title]">
+                        </div>
+            
+                        <div class="mb-3">
+                            <label class="form-label" for="location">Party Size</label>
+                            <input class="form-control" type="number" id="location" name="campground[location]" min=0 max= 10>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="image">Date</label>
+                            <input type="date" value="2023-05-26" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="price">Time</label>
+                            <div class="input-group">
+                                <!-- <span class="input-group-text" id="price-label">$</span> -->
+                                <select id="cars" name="cars">
+                                    <option value="5">5:00 PM</option>
+                                    <option value="5.5">5:30 PM</option>
+                                    <option value="6">6:00 PM</option>
+                                    <option value="6.5">6:30 PM</option>
+                                    <option value="7">7:00 PM</option>
+                                    <option value="7.5">7:30 PM</option>
+                                    <option value="8">8:00 PM</option>
+                                    <option value="8.5">8:30 PM</option>
+                                    <option value="9">9:00 PM</option>
+                                    <option value="9.5">9:30 PM</option>
+                                    <option value="10">10:00 PM</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-success">Make Reservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mt-auto text-white-50">
+            Bova Los Angeles
+            <p>&copy; 2023 </p>
+        </footer>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
