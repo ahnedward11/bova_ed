@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bova</title>
+</head>
+
+<body>
+    <h1>All Reservations</h1>
+    <div>
+        <a href="/bova/reserve">Make Another Reservation</a>
+    </div>
+    <ul>
+        <% for (let reservation of reservations){%>
+        <li><a href="/reservations/<%= reservation._id %>"><%= reservation.name %></a></li>
+        <% }%>
+    </ul>
+
+</body>
+
+</html>

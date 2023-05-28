@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    background-color: whitesmoke;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5); */
+}
+button {
+    background-color: white;
+}
+
+
+.cover-container {
+    /* background-color: white; */
+    max-width: 60vw;
+  }
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(8, 8, 8, 0.5);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover{
+    color: rgba(41, 40, 40, 0.5);
+    border-bottom-color:rgba(255,255,255,0.5);
+}
+
+.nav-link.active {
+    color: rgb(9, 9, 9);
+    border-bottom-color:black;
+
+}
+
+.btn-secondary, .btn-secondary:hover{
+    color: rgb(9, 8, 8);
+    text-shadow: none;
+}

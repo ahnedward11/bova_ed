@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bova</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/cart.css">
+    <!-- <link rel="stylesheet" href="/public/stylesheets/home.css"> -->
+
+</head>
+
+<body class="d-flex text-center text-black bg-light">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto text-black">
+            <div>
+                <h3 class="float-md-left mb-0 text-black">Bova</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-right">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/bova/menu">Menu</a>
+                    <a class="nav-link active" href="/bova/onlineorder">Order Online</a>
+                    <a class="nav-link" href="/bova/reserve">Reserve</a>
+                    <a class="nav-link" href="/bova/cart">Cart</a>
+                </nav>
+            </div>
+        </header>
+        <main class="px-3">
+            <h1>Menu</h1>
+            <div class = "container">
+                <div class = "menu">
+                    
+                    
+                    <div class = "container">
+                        <div class = "menu">
+                            <h2 class="menu-group-heading">
+                                Bread & Snacks
+                            </h2>
+                            <div class="menu-group">
+                                <form action="/items" method="POST" novalidate class = "validated-form">
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/267733387_5243304435686166_7215649314705593628_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_ohc=SFD10uHO9HIAX-Fl6y7&_nc_ht=scontent-sjc3-1.xx&oh=00_AfBf-3qywPxmeFgVSN-BTGTMr_pj8jSbwY_-HkNN496eEw&oe=6475C740" alt="naan & dips" class="menu-item-image" id="img">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name" for="dish">naan & dips</span>
+                                            <span class="menu-item-price" for="price">18</span>
+                                        </h3>
+                                        <p class="menu-item-description" id="description">
+                                            tahini tofu . carrot 'hummus'
+                                        </p>
+
+                                    </div>
+                                </div>
+                                </button>
+                                </form>
+                            
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.bhg.com/thmb/ENDgOaFLaUzIgnXWyEDcPxmUgfk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/pretzel-skillet-RU307673-ca08082f38234892b496f57a25c08147.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">pretzel pull-apart</span>
+                                            <span class="menu-item-price">12</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            bread and butter relish . pastrami butter
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                         
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">goat liver mousse</span>
+                                            <span class="menu-item-price">22</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            crumpets . biscuit crackers . pickled green strawberries . blueberry jam . craisin relish
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                          
+                            </div>
+        
+                            <h2 class="menu-group-heading">
+                                Salads
+                            </h2>
+                            <div class="menu-group">
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">shrimp & crispy greens</span>
+                                            <span class="menu-item-price">24</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            avocado . strawberries . pepita crunch . limey-herby dressing
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>   
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">pork belly noodles</span>
+                                            <span class="menu-item-price">23</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            chili crunch . black eyed peas . pickled veggies
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                            
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">roasted beet</span>
+                                            <span class="menu-item-price">19</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            yuzu kosho vinaigrette . party nuts. golden beet giardiniera
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                            </div>
+             
+        
+                            <h2 class="menu-group-heading">
+                                Veggies
+                            </h2>
+                            <div class="menu-group">
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">chickpea fritters</span>
+                                            <span class="menu-item-price">16</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            goat yogurt . herb chutney . tamarind . sev crunch
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">roasted shishitos</span>
+                                            <span class="menu-item-price">18</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            harissa-tahini yogurt . parmesan . garlic crunch
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">grilled corn</span>
+                                            <span class="menu-item-price">16</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            spiced coconut caramel . cotija . tajin
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">sautéed green beans</span>
+                                            <span class="menu-item-price">19</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            fish sauce vinaigrette . cashews
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                            </div>
+                            <h2 class="menu-group-heading">
+                                Fish
+                            </h2>
+                            <div class="menu-group">
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">kingfish poke</span>
+                                            <span class="menu-item-price">24</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            browned goat butter . goat crema . pickled kumquats . tempura crunch . sesame seed
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">roasted oysters</span>
+                                            <span class="menu-item-price">17</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            clam baguette . sausage butter . oyster sauce mayo . blood orange
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">pan-seared halibut</span>
+                                            <span class="menu-item-price">34</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            miso-marcona almond butter . snap peas . blueberry nuoc cham
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">grilled whole branzino</span>
+                                            <span class="menu-item-price">40</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            thai style sweet n' sour . green papaya . mung bean-pomelo salad . pickled veggies
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                            </div>
+        
+                            <h2 class="menu-group-heading">
+                                Meat
+                            </h2>
+                            <div class="menu-group">
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">braised crispy lamb</span>
+                                            <span class="menu-item-price">30</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            12 spice bagna cauda . grilled radicchio
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">tasty chicken skewer situation</span>
+                                            <span class="menu-item-price">28</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            cashew "butter" . hen of the woods . mushrooms . sunchoke chips
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">goat curry*</span>
+                                            <span class="menu-item-price">35</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            masa chips . radish . pickled veggies *subject to availability
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">grilled skirt steak</span>
+                                            <span class="menu-item-price">34</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            sichuan peanut sauce . pickled cucumbers . fresno chiles
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">confit goat belly</span>
+                                            <span class="menu-item-price">33</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            tahini yogurt . hazlenut dukkah . blood orange vinaigrette . pickled blueberries
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">sticky glazed pork shank</span>
+                                            <span class="menu-item-price">42</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            nectarine . spring onion . hoisin mayo . hot mustard . naan . lettuce cups
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                            </div>
+        
+                            <h2 class="menu-group-heading">
+                                Dessert
+                            </h2>
+                            <div class="menu-group">
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">lemon & strawberry posset</span>
+                                            <span class="menu-item-price">15</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            sumac chickpea cookie . boozy golden raisins . pomegranate whip
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">mango sticky rice</span>
+                                            <span class="menu-item-price">15</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            mango tamarind ice cream . pickled green mango . coconut cloud . watermelon granita
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">almond & citrus</span>
+                                            <span class="menu-item-price">15</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            almond buttercake . citrus ice cream . kumquats . blood orange gastrique . brown butter fun crunch
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">choco crinkle cookie sundae</span>
+                                            <span class="menu-item-price">15</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            montamore ice cream . cajeta . choco masa chips
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">sesame cookies & cream scoop</span>
+                                            <span class="menu-item-price">6</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            sesame caramel . chocolate crunchies
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>   
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">hazelnut ice cream</span>
+                                            <span class="menu-item-price">6</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            chocolate magic shell
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">strawberry sorbet</span>
+                                            <span class="menu-item-price">6</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            coconut caramel
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                                <button>
+                                <div class="menu-item">
+                                    <img src="https://www.chicagotribune.com/resizer/X27rYQA6GMnrRfRHQtbdOQgCYmQ=/1024x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LSTXSEY7CRECHBAB4CJ7XPPLJA.jpg" alt="naan & dips" class="menu-item-image">
+                                    <div class="menu-item-test">
+                                        <h3 class="menu-item-heading">
+                                            <span class="menu-item-name">vanilla ice cream</span>
+                                            <span class="menu-item-price">6</span>
+                                        </h3>
+                                        <p class="menu-item-description">
+                                            choco quinoa crunch
+                                        </p>
+                                    </div>
+                                </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+        </main>
+
+        <footer class="mt-auto text-white-50">
+            Bova Los Angeles
+            <p>&copy; 2023 </p>
+        </footer>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
