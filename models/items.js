@@ -6,12 +6,10 @@ const ItemSchema = new mongoose.Schema({
     price: Number,
     description: String,
     img: String,
+    qty: Number,
 });
 
 module.exports = mongoose.model('Item', ItemSchema);
 
-// const Item = mongoose.model('Item', productSchema);
-
-// module.exports = Item;
 
 

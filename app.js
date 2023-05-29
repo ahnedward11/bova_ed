@@ -65,19 +65,6 @@ app.use(flash());
 
 app.use(passport.initialize());
 app.use(passport.session());
-// passport.use(new LocalStrategy(User.createStrategy()));
-// passport.use(new LocalStrategy(User.authenticate()));
-
-// passport.serializeUser(User.serializeUser());
-// passport.deserializeUser(User.deserializeUser());
-
-// app.use((req, res, next) => {
-//     console.log(req.session)
-//     res.locals.currentUser = req.user;
-//     res.locals.success = req.flash('success');
-//     res.locals.error = req.flash('error');
-//     next();
-// })
 
 
 app.get('/', (req, res) => {
@@ -136,7 +123,11 @@ app.delete('/reservations/:id', async (req, res) => {
 
 
 
-
+app.post('/items', async(req, res) =>{
+    const item = new Item(req.body.item);
+    await item.save();
+    res.redirect('bova/onlineorder')
+})
 
 
 app.get('/allitems', async (req, res) => {
@@ -148,16 +139,7 @@ app.get('/items/:id', async (req, res,) => {
     res.render('bova/showitem', { item });
 });
 
-// app.get('/items/:id/edit', async (req, res) => {
-//     const item = await Item.findById(req.params.id)
-//     res.render('bova/itemedit', { item });
-// })
 
-app.post('/items', async(req, res) =>{
-    const item = new Item(req.body.item);
-    await item.save();
-    res.redirect('bova/onlineorder')
-})
 
 app.delete('/items/:id', async (req, res) => {
     const { id } = req.params;
@@ -171,3 +153,6 @@ app.delete('/items/:id', async (req, res) => {
 app.listen(3000, () => {
     console.log('Serving on port 3000')
 })
+
+
+let hashMap = {'hello' : 2};
